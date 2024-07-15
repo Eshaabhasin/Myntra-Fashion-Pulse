@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root{
+  font-family: Lexend;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  color: #2c2c2c;
+}
+
+
+.nav {
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f98bdf', GradientType=1 );
+    position: relative;
+    font-family: Lexend;
+    top: 3%;
+    z-index: 1000;
+    background: rgba(87, 87, 87, 0.15);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 )
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #2c2c2c;
+  }
+
+  .nav > .nav-links > .logo{
+    margin-right: 33vw;
+    height: 50px;
+    margin-left: 0.5vw;
+    margin-top: -0.5vw;
+    padding: 0;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  .nav > .nav-links > .post-icon {
+    position: absolute;
+    top: 0.5px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    display: inline-block;
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+  }
+  
+  .nav > .nav-links > .post-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image fits within the specified dimensions */
+  }
+  
+  .Hero-Section{
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .Info{
+    width: 50%;
+    margin-left: 5vw;
+    margin-top: 10vh;
+  }
+
+  .Info > h1{
+    font-family: Lexend;
+    font-size: 100px;
+    line-height: 80px;
+  }
+
+  .Info > p{
+    font-family: Lexend;
+    font-size: 25px;
+    margin-top: -7vh;
+  }
+
+.Window > section {
+  width: 80%;
+  line-height: 0;
+  position: relative;
+  margin-top: 15vh;
+  margin-left: 10vw;
+}
+
+section img {
+  width: 100%;
+}
+
+section article {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  mix-blend-mode: lighten;
+}
+
+section div {
+  background: black;
+  height: 17.5vw;
+}
+
+section div:nth-of-type(2) {
+  grid-column: 2 / 4;
+}
+
+
+.About{
+  position: relative;
+  display: flex;
+}
+
+.About > h1{
+  margin-top: 20vh;
+  margin-left: 5vw;
+  font-size: 80px;
+}
+
+.About > p{
+  margin-top: 40vh;
+  position: absolute;
+  width: 50%;
+  margin-left: 5vw;
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+.frame {
+  margin-top: -20vh;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 50vw;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -37.5px; /* ($fontSize * 1.5) / -2 where $fontSize = 50px */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 50px; /* $fontSize */
+  line-height: 75px; /* $fontSize * 1.5 */
+  height: 75px; /* $fontSize * 1.5 */
+}
+
+.carousel .pre {
+  position: absolute;
+  color: #2c2c2c;
+  top: 0;
+  right: 54.5%;
+  height: 75px; /* $fontSize * 1.5 */
+}
+
+.carousel .change_outer {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  text-align: left;
+  height: 75px; /* $fontSize * 1.5 */
+  overflow: hidden;
+}
+
+.carousel .change_outer .change_inner {
+  position: relative;
+  animation: rotate 8s ease-in-out infinite;
+}
+
+.carousel .change_outer .change_inner .element {
+  display: block;
+  color: #2c2c2c;
+  font-weight: 700;
+}
+
+@keyframes rotate {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-75px); /* $fontSize * -1.5 */
+  }
+  50%, 70% {
+    transform: translateY(-150px); /* $fontSize * -3 */
+  }
+  75%, 95% {
+    transform: translateY(-225px); /* $fontSize * -4.5 */
+  }
+  100% {
+    transform: translateY(-300px); /* $fontSize * -6 */
+  }
+}
+
+footer{
+  background-color: #d8d8d8;
+  position: absolute;
+  margin-top: 50vh;
+  display: flex;
+  width: 110%;
+  margin-left: -2vw;
+  padding-bottom: 10vh;
+  padding-Top: 10vh;
+}
+
+.footer-left{
+  width: 30%;
+  margin-left: 5vw;
+}
+
+.footer-left > p{
+  text-align: justify;
+}
+
+.footer-left > ul{
+  list-style: none;
+  margin-left: -3vw;
+}
+
+.footer-right{
+  margin-left: 5vw;
+  display: flex;
+}
+
+.Women > ul{
+  list-style: none;
+  margin-left: -3vw;
+}
+
+.Men{
+  margin-left: 5vw;
+}
+
+.Men > ul{
+  list-style: none;
+  margin-left: -3vw;
+}
+
+
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    /* .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(253, 253, 253, 0.3\\);
+    } */
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #f1f1f1;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }

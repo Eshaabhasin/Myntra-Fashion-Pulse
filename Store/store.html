@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <a class="logo" href="../Home page/index.html"><img src="../Assets/Myntra logo.png"></a>
+            <a href="../Store/store.html">STORE</a>
+            <a href="../voting/voting.html">COLLECTIONS</a>
+            <a href="../features/feature.html">EXPLORE</a>
+  
+            <a class="post-icon" href="../post/post.html"><img src="../Assets/post1.png"></a>
+        </div>
+      </div>
+
+    <div class="content">
+        <div class="accordion-container">
+            <button class="accordion">Category</button>
+            <div class="panel">
+                <ul>
+                    <li><input type="checkbox" class="filter" data-filter="category" value="Kurta"> Kurta</li>
+                    <li><input type="checkbox" class="filter" data-filter="category" value="Kurti"> Kurtis</li>
+                    <li><input type="checkbox" class="filter" data-filter="category" value="Croptop"> Croptop</li>
+                </ul>
+            </div>
+            
+            <button class="accordion">Brand</button>
+            <div class="panel">
+                <ul>
+                    <li><input type="checkbox" class="filter" data-filter="brand" value="FabIndia"> FabIndia</li>
+                    <li><input type="checkbox" class="filter" data-filter="brand" value="Global Desi"> Global Desi</li>
+                    <li><input type="checkbox" class="filter" data-filter="brand" value="House of Chikankari"> House of Chikankari</li>
+                    <li><input type="checkbox" class="filter" data-filter="brand" value="Anouk"> Anouk</li>
+                    <li><input type="checkbox" class="filter" data-filter="brand" value="Latin Quarters"> Latin Quarters</li>
+                </ul>
+            </div>
+            
+            <button class="accordion">Price</button>
+            <div class="panel">
+                <ul>
+                    <li><input type="checkbox" class="filter" data-filter="price" value="0-5000"> Rs. 206 to Rs. 4395</li>
+                    <li><input type="checkbox" class="filter" data-filter="price" value="5001-10000"> Rs. 4395 to Rs. 8764</li>
+                    <li><input type="checkbox" class="filter" data-filter="price" value="10001-20000"> Rs.8764 to Rs. 15002</li>
+                </ul>
+            </div>
+            
+            <button class="accordion">Color</button>
+            <div class="panel">
+                <ul>
+                    <li><input type="checkbox" class="filter" data-filter="color" value="Red"> Red</li>
+                    <li><input type="checkbox" class="filter" data-filter="Blue" value="Blue"> Blue</li>
+                    <li><input type="checkbox" class="filter" data-filter="Green" value="Green"> Green</li>
+                    <li><input type="checkbox" class="filter" data-filter="Yellow" value="Yellow"> Yellow</li>
+                    <li><input type="checkbox" class="filter" data-filter="Purple" value="Purple"> Purple</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card-container">
+                <div class="child1" data-category="Kurti" data-brand="FabIndia" data-price="1000" data-color="Red">
+                    <img class="img1" src="../Assets/kurti.jpg" alt="Kurti">
+                    <h1>FabIndia</h1>
+                    <p>Printed Cotton Kurti</p>
+                    <p><b>Rs. 1000</b> <s>Rs.2500</s></p>
+                </div>
+                <div class="child2" data-category="Kurti" data-brand="Global Desi" data-price="649" data-color="Blue">
+                    <img class="img1" src="../Assets/kurti2.jpg" alt="Kurti">
+                    <h1>Global Desi</h1>
+                    <p>Bell Sleeves Cotton Kurti</p>
+                    <p><b>Rs. 649</b> <s>Rs.1000</s></p>
+                </div>
+                <div class="child3" data-category="Kurta" data-brand="House of Chikankari" data-price="1534" data-color="Green">
+                    <img class="img1" src="../Assets/kurti3.jpg" alt="Kurti">
+                    <h1>House of Chikankari</h1>
+                    <p>Floral Printed Cotton Kurta</p>
+                    <p><b>Rs. 1534</b> <s>Rs.2950</s></p>
+                </div>
+                <div class="child4" data-category="Kurti" data-brand="Global Desi" data-price="539" data-color="Yellow">
+                    <img class="img1" src="../Assets/kurti4.jpg" alt="Kurti">
+                    <h1>Global Desi</h1>
+                    <p>Chevron Printed V-Neck Kurti</p>
+                    <p><b>Rs. 539</b> <s>Rs.1799</s></p>
+                </div>
+            </div>
+
+            <div class="card-container2">
+                <div class="child1" data-category="Croptop" data-brand="Anouk" data-price="639" data-color="Purple">
+                    <img class="img1" src="../Assets/croptop1.jpg" alt="Crop Top">
+                    <h1>Anouk</h1>
+                    <p>Geometric Print Style Crop Top</p>
+                    <p><b>Rs. 679</b> <s>Rs.1999</s></p>
+                </div>
+                <div class="child2" data-category="Croptop" data-brand="Pretty Loving Thing" data-price="599" data-color="Olive Green">
+                    <img class="img1" src="../Assets/croptop2.jpg" alt="Crop Top">
+                    <h1>Pretty Loving Thing</h1>
+                    <p> Olive Green Cotton Crop Top</p>
+                    <p><b>Rs. 599</b> <s>Rs.1999</s></p>
+                </div>
+                <div class="child3" data-category="Croptop" data-brand="Anouk" data-price="999" data-color="Purple">
+                    <img class="img1" src="../Assets/croptop3.jpg" alt="Crop Top">
+                    <h1>Anouk</h1>
+                    <p>Floral Printed  Rayon Crop Top</p>
+                    <p><b>Rs. 664</b> <s>Rs.1899</s></p>
+                </div>
+                <div class="child4" data-category="Croptop" data-brand="Latin Quarters" data-price="3359" data-color="Blue">
+                    <img class="img1" src="../Assets/croptop4.jpg" alt="Kurti">
+                    <h1>Latin Quarters</h1>
+                    <p>Floral Printed Crop Top</p>
+                    <p><b>Rs.849</b> <s>Rs.1699</s></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+
+        var filters = document.querySelectorAll('.filter');
+        filters.forEach(function(filter) {
+            filter.addEventListener('change', filterItems);
+        });
+
+        function filterItems() {
+            var selectedFilters = {
+                category: getCheckedValues('category'),
+                brand: getCheckedValues('brand'),
+                price: getCheckedValues('price'),
+                color: getCheckedValues('color')
+            };
+
+            var items = document.querySelectorAll('.card-container .child1, .card-container .child2, .card-container .child3, .card-container .child4, .card-container2 .child1, .card-container2 .child2, .card-container2 .child3, .card-container2 .child4');
+            items.forEach(function(item) {
+                var category = item.getAttribute('data-category');
+                var brand = item.getAttribute('data-brand');
+                var price = parseInt(item.getAttribute('data-price'));
+                var color = item.getAttribute('data-color');
+
+                var show = true;
+
+                if (selectedFilters.category.length && !selectedFilters.category.includes(category)) show = false;
+                if (selectedFilters.brand.length && !selectedFilters.brand.includes(brand)) show = false;
+                if (selectedFilters.price.length && !isPriceInRange(price, selectedFilters.price)) show = false;
+                if (selectedFilters.color.length && !selectedFilters.color.includes(color)) show = false;
+
+                if (show) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function getCheckedValues(filterType) {
+            var checkboxes = document.querySelectorAll('.filter[data-filter="' + filterType + '"]:checked');
+            return Array.from(checkboxes).map(function(checkbox) {
+                return checkbox.value;
+            });
+        }
+
+        function isPriceInRange(price, ranges) {
+            for (var i = 0; i < ranges.length; i++) {
+                var range = ranges[i].split('-');
+                var min = parseInt(range[0]);
+                var max = parseInt(range[1]);
+                if (price >= min && price <= max) return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
